@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23d04c84-62f9-4f15-ac8f-7db678594375" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3.21" />
+  <component name="ProjectId" id="1sPkzMhQL2X5BpQn7O5dEV0SBWW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Solvo\products" />
+      <recent name="C:\laragon\www\Solvo" />
+      <recent name="C:\laragon\www\Solvo\categories" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Solvo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23d04c84-62f9-4f15-ac8f-7db678594375" name="Default Changelist" comment="" />
+      <created>1620781874310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620781874310</updated>
+      <workItem from="1620781875510" duration="13654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="753" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1620787861408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="228" key="#com.intellij.ide.util.MemberChooser/1920.313.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1620787861408" />
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1620782546592">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="260" key="FileChooserDialogImpl/1920.313.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1620782546592" />
+    <state x="787" y="242" key="NewPhpClassDialog" timestamp="1620787783040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="787" y="242" key="NewPhpClassDialog/1920.313.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1620787783040" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1620782629955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/1920.313.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1620782629955" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1620782551466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/1920.313.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1620782551466" />
+  </component>
+</project>
