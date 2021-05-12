@@ -4,6 +4,10 @@ namespace Shop\Products;
 
 use Shop\Categories\ElectronicItem;
 
+/**
+ * Class Microwave
+ * @package Shop\Products
+ */
 class Microwave extends ElectronicItem
 {
     public function __construct(string $name, string $description, string $price)

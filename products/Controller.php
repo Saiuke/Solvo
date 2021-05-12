@@ -4,6 +4,10 @@ namespace Shop\Products;
 
 use Shop\Categories\Extra;
 
+/**
+ * Class Controller
+ * @package Shop\Products
+ */
 class Controller extends Extra
 {
     public function __construct(string $name, string $description, string $price, bool $isWired)

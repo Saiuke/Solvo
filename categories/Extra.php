@@ -2,6 +2,10 @@
 
 namespace Shop\Categories;
 
+/**
+ * Class Extra
+ * @package Shop\Categories
+ */
 abstract class Extra
 {
 
@@ -102,7 +106,8 @@ abstract class Extra
     /**
      * Outputs basic info about the current item
      */
-    public function print(){
+    public function print()
+    {
         echo "&nbsp;&nbsp;&nbsp;◈ " . $this->name . " | Price: $" . $this->price . "<br>";
     }
 

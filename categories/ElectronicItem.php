@@ -2,6 +2,10 @@
 
 namespace Shop\Categories;
 
+/**
+ * Class ElectronicItem
+ * @package Shop\Categories
+ */
 abstract class ElectronicItem
 {
     private string $name;
@@ -10,6 +14,20 @@ abstract class ElectronicItem
     private string $price;
     private array  $extras = array();
     private int    $maxExtras;
+
+    /**
+     * ElectronicItem constructor.
+     * @param string $name
+     * @param string $type
+     * @param string $description
+     * @param string $price
+     */
+    public function __construct(string $name, string $description, string $price)
+    {
+        $this->name = $name;
+        $this->description = $description;
+        $this->price = $price;
+    }
 
     /**
      * @return int
@@ -25,20 +43,6 @@ abstract class ElectronicItem
     public function setMaxExtras(int $maxExtras): void
     {
         $this->maxExtras = $maxExtras;
-    }
-
-    /**
-     * ElectronicItem constructor.
-     * @param string $name
-     * @param string $type
-     * @param string $description
-     * @param string $price
-     */
-    public function __construct(string $name, string $description, string $price)
-    {
-        $this->name = $name;
-        $this->description = $description;
-        $this->price = $price;
     }
 
     /**
@@ -92,6 +96,15 @@ abstract class ElectronicItem
     }
 
     /**
+     * Returns true if the object has any extras, otherwise returns false
+     * @return bool
+     */
+    public function hasExtras(): bool
+    {
+        return !empty($this->extras);
+    }
+
+    /**
      * @return string
      */
     public function getName(): string
@@ -140,22 +153,6 @@ abstract class ElectronicItem
     }
 
     /**
-     * @return string
-     */
-    public function getPrice(): string
-    {
-        return $this->price;
-    }
-
-    /**
-     * @param string $price
-     */
-    public function setPrice(string $price): void
-    {
-        $this->price = $price;
-    }
-
-    /**
      * @return array
      */
     public function getExtras(): array
@@ -169,15 +166,6 @@ abstract class ElectronicItem
     public function setExtras(array $extras): void
     {
         $this->extras = $extras;
-    }
-
-    /**
-     * Returns true if the object has any extras, otherwise returns false
-     * @return bool
-     */
-    public function hasExtras(): bool
-    {
-        return !empty($this->extras);
     }
 
     public function printExtras()
@@ -218,5 +206,21 @@ abstract class ElectronicItem
     public function getTotal()
     {
         return $this->getPrice() + $this->getTotalExtras();
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrice(): string
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param string $price
+     */
+    public function setPrice(string $price): void
+    {
+        $this->price = $price;
     }
 }

@@ -4,6 +4,10 @@ namespace Shop\Products;
 
 use Shop\Categories\ElectronicItem;
 
+/**
+ * Class Television
+ * @package Shop\Products
+ */
 class Television extends ElectronicItem
 {
     public function __construct(string $name, string $description, string $price)

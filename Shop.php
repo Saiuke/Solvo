@@ -4,6 +4,10 @@ namespace Shop;
 
 use Shop\Categories\ElectronicItem;
 
+/**
+ * Class Shop
+ * @package Shop
+ */
 class Shop
 {
     private array $cart;
@@ -30,37 +34,6 @@ class Shop
     }
 
     /**
-     * @return float
-     */
-    public function getTotal(): float
-    {
-        if (!isset($this->total)) {
-            $this->setTotal();
-        }
-        return $this->total;
-    }
-
-    /**
-     * @param float $total
-     */
-    private function setTotal(): void
-    {
-        $currentCart = $this->cart;
-        $cartTotal = 0;
-        foreach ($currentCart as $item) {
-            $cartTotal += $item->getTotal();
-        }
-        $this->total = $cartTotal;
-    }
-
-    public function sortCart()
-    {
-        $currentCart = $this->cart;
-        usort($currentCart, function($a, $b) {return strcmp($a->getTotal(), $b->getTotal());});
-        $this->cart = $currentCart;
-    }
-
-    /**
      * Prints a list containing the cart's items and its totals
      * @return void
      */
@@ -82,5 +55,38 @@ class Shop
             echo "<hr>";
         }
         echo "<h2><b>TOTAL: </b>$" . $this->getTotal() . "</h2>";
+    }
+
+    public function sortCart()
+    {
+        $currentCart = $this->cart;
+        usort($currentCart, function ($a, $b) {
+            return strcmp($a->getTotal(), $b->getTotal());
+        });
+        $this->cart = $currentCart;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        if (!isset($this->total)) {
+            $this->setTotal();
+        }
+        return $this->total;
+    }
+
+    /**
+     * @param float $total
+     */
+    private function setTotal(): void
+    {
+        $currentCart = $this->cart;
+        $cartTotal = 0;
+        foreach ($currentCart as $item) {
+            $cartTotal += $item->getTotal();
+        }
+        $this->total = $cartTotal;
     }
 }
